@@ -20,7 +20,7 @@ export default function ActiveLinks({
       className={`${
         isCurrentPath
           ? "bg-cyan-500 text-zinc-900 rounded p-2"
-          : " transparent"
+          : " transparent hover:bg-cyan-500 hover:text-zinc-900 rounded p-2 transition"
       }`}
     >
       {children}

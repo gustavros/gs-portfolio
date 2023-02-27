@@ -21,3 +21,4 @@ strong {
 main {
   @apply min-h-[500px] flex flex-col items-start justify-center px-4;
 }
+
