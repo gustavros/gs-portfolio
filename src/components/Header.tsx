@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "phosphor-react";
+import ActiveLinks from "./ActiveLinks";
 
 export default function Header() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -49,22 +50,21 @@ export default function Header() {
         <nav className="flex items-end">
           <ul className="flex gap-4 text-lg">
             <li>
-              <a href="/">Home</a>
+              <ActiveLinks href={"/"}>Home</ActiveLinks>
             </li>
             <li>
-              <a href="/techs">Techs</a>
+              <ActiveLinks href="/techs">Techs</ActiveLinks>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <ActiveLinks href="/projects">Projects</ActiveLinks>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <ActiveLinks href="/contact">Contact</ActiveLinks>
             </li>
           </ul>
         </nav>
 
         {renderThemeChanger()}
-        
       </header>
     </>
   );
