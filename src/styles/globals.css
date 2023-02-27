@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @apply bg-zinc-900 text-zinc-200 max-w-4xl mx-auto antialiased font-sans dark:bg-zinc-200 dark:text-zinc-900 transition-all;
+}
+
+strong {
+  @apply font-bold text-cyan-500;
+}
+
+main {
+  @apply min-h-[500px] flex flex-col items-start justify-center px-4;
+}
