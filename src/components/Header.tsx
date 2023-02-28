@@ -59,10 +59,10 @@ export default function Header() {
             <li>
               <ActiveLinks href="/skills">Skills</ActiveLinks>
             </li>
-            <li>
+            <li className="cursor-not-allowed text-zinc-700 pointer-events-none select-none">
               <ActiveLinks href="/projects">Projects</ActiveLinks>
             </li>
-            <li>
+            <li className="cursor-not-allowed text-zinc-700 pointer-events-none select-none">
               <ActiveLinks href="/contact">Contact</ActiveLinks>
             </li>
           </ul>
