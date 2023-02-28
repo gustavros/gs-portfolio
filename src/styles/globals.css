@@ -11,7 +11,7 @@
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-200 max-w-4xl mx-auto antialiased font-sans dark:bg-zinc-50 dark:text-zinc-900 transition-all;
+  @apply bg-zinc-900 text-zinc-200 max-w-3xl mx-auto antialiased font-sans dark:bg-zinc-50 dark:text-zinc-900 transition-all;
 }
 
 strong {
@@ -19,6 +19,6 @@ strong {
 }
 
 main {
-  @apply min-h-[500px] flex flex-col items-start justify-center px-4;
+  @apply min-h-[500px] flex flex-col items-start justify-center px-4 animate-fade-in relative;
 }
 

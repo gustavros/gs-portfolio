@@ -2,23 +2,33 @@ export default function Home() {
   return (
     <>
       <main>
-        <p className="font-poppins pb-4">
+        <p className="font-poppins pb-4 text-base">
           Gustavo Santana. Front-end Developer. Gamer.
         </p>
 
-        <h1 className="font-unbounded text-4xl pb-4">
+        <h1 className="font-unbounded text-5xl pb-4">
           Hi— I'm Gustavo. Creating dreams through programming.
         </h1>
 
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="text-xl">
           <p>
-            Quidem deserunt praesentium natus eligendi esse nam minima facere
-            illum <strong>ducimus</strong> rem enim nisi magni, a, et sunt
-            provident tempora, consectetur optio voluptatibus! Deleniti vel,
-            ratione eaque quasi at sit <strong>adipisci</strong> vitae.
+            I'm brazilian, and I'm a front-end developer. I'm currently working
+            with React and Next.js.
+          </p>
+
+          <p>
+            I love to play games, and I'm a big fan of the{" "}
+            <span className="text-red-400">Red Dead Redemption 2</span>.
           </p>
         </div>
+
+        <p className="mt-8 ">
+          You want chat with me?{" "}
+          <a href="mailto:gustavossw@hotmail.com" className="text-cyan-400">
+            Send me an email
+          </a>
+          .
+        </p>
       </main>
     </>
   );

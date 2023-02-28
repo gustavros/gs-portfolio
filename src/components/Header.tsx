@@ -44,16 +44,20 @@ export default function Header() {
     <>
       <header className="flex items-center justify-between py-10 px-4 ">
         <h1 className="font-bold text-3xl uppercase text-cyan-400">
-          <a href="/">GUSTAVO SANTANA</a>
+          <a href="/">
+            GUSTAVO
+            <br />
+            SANTANA
+          </a>
         </h1>
 
-        <nav className="flex items-end">
+        <nav className="flex gap-4 items-end">
           <ul className="flex gap-4 text-lg">
             <li>
               <ActiveLinks href={"/"}>Home</ActiveLinks>
             </li>
             <li>
-              <ActiveLinks href="/techs">Techs</ActiveLinks>
+              <ActiveLinks href="/skills">Skills</ActiveLinks>
             </li>
             <li>
               <ActiveLinks href="/projects">Projects</ActiveLinks>
@@ -62,9 +66,9 @@ export default function Header() {
               <ActiveLinks href="/contact">Contact</ActiveLinks>
             </li>
           </ul>
-        </nav>
 
-        {renderThemeChanger()}
+          {renderThemeChanger()}
+        </nav>
       </header>
     </>
   );
