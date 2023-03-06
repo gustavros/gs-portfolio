@@ -9,11 +9,11 @@ import SassLogo from "../../assets/sass.svg";
 
 export default function Skills() {
   return (
-    <main className="flex flex-col gap-12 py-10">
+    <main className="flex flex-col gap-10 py-10">
       <div>
-        <h1 className="font-unbounded text-4xl">Skills</h1>
+        <h1 className="font-unbounded text-4xl">Habilidades</h1>
         <p className="text-lg font-light">
-          I have experience with the following <strong>technologies</strong>:
+          Eu tenho conhecimento com as seguintes <strong>tecnologia</strong>:
         </p>
       </div>
 
