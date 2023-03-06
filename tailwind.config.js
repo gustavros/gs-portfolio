@@ -19,10 +19,16 @@ module.exports = {
           "0%": { opacity: 0, top: "40px" }, // from
           "100%": { opacity: 1, top: "0" }, // to
         },
+
+        "slide-in-right": {
+          "0%": { opacity: 0 }, // from
+          "100%": { opacity: 1 }, // to
+        },
       },
 
       animation: {
         "fade-in": "fade-in 0.5s ease-in-out",
+        "slide-in-right": "slide-in-right 0.2s ease-in-out",
       },
     },
   },

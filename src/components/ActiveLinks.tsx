@@ -17,6 +17,7 @@ export default function ActiveLinks({
   return (
     <Link
       href={href}
+      {...rest}
       className={`${
         isCurrentPath
           ? "bg-cyan-500 text-zinc-900 rounded p-2"

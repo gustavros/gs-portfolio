@@ -8,8 +8,8 @@ export default function Home() {
           Gustavo Santana. Desenvolvedor Front-end. Gamer.
         </p>
 
-        <h1 className="font-unbounded text-5xl pb-4">
-          Olá— Eu sou o Gustavo. Criando sonhos atráves da programação.
+        <h1 className="font-unbounded text-4xl pb-4 md:text-5xl">
+          <span className="font-unbounded text-cyan-300 ">Olá— Eu sou o Gustavo.</span> Criando sonhos atráves da programação.
         </h1>
 
         <div className="text-xl">

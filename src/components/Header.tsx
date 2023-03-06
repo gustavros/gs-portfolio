@@ -1,15 +1,20 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { List, Moon, Sun } from "phosphor-react";
+import { List, Moon, Sun, X } from "phosphor-react";
 import ActiveLinks from "./ActiveLinks";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -56,18 +61,102 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between py-10 px-4 ">
-        <h1 className="font-bold text-3xl uppercase text-cyan-400">
-          <a href="/">
-            GUSTAVO
-            <br />
-            SANTANA
-          </a>
-        </h1>
+      {isMobile ? (
+        <header className="flex items-center justify-between py-10 px-4">
+          <h1 className="font-bold text-3xl uppercase text-cyan-400">
+            <a href="/">
+              GUSTAVO
+              <br />
+              SANTANA
+            </a>
+          </h1>
 
-        {isMobile ? (
-          <List size={32} className="text-cyan-400" />
-        ) : (
+          {isMenuOpen ? (
+            <div className="absolute top-0 right-0 w-1/2 h-screen bg-zinc-900 bg-opacity-90 z-10 animate-slide-in-right overflow-auto dark:bg-zinc-50 dark:bg-opacity-90">
+              <nav className="flex flex-col gap-6 items-center justify-center h-full ">
+                <ul className="flex flex-col gap-8 items-center text-lg">
+                  <li>
+                    <ActiveLinks
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                      }}
+                      href={"/"}
+                    >
+                      Início
+                    </ActiveLinks>
+                  </li>
+                  <li>
+                    <ActiveLinks
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                      }}
+                      href="/skills"
+                    >
+                      Habilidades
+                    </ActiveLinks>
+                  </li>
+                  <li>
+                    <ActiveLinks
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                      }}
+                      href="/projects"
+                    >
+                      Projetos
+                    </ActiveLinks>
+                  </li>
+                  <li className="cursor-not-allowed text-zinc-700 pointer-events-none select-none dark:text-zinc-200">
+                    <ActiveLinks
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                      }}
+                      href="/contact"
+                    >
+                      Contato
+                    </ActiveLinks>
+                  </li>
+                </ul>
+
+                {renderThemeChanger()}
+
+                <button
+                  className="absolute top-11 right-0 p-4"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  <X
+                    size={32}
+                    className="text-cyan-400"
+                    role={"button"}
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                    }}
+                  />
+                </button>
+              </nav>
+            </div>
+          ) : (
+            <List
+              size={32}
+              className="text-zinc-900 bg-cyan-400 p-1 rounded-lg"
+              role={"button"}
+              onClick={() => {
+                setIsMenuOpen(true);
+              }}
+            />
+          )}
+        </header>
+      ) : (
+        <header className="flex items-center justify-between py-10 px-4 ">
+          <h1 className="font-bold text-3xl uppercase text-cyan-400">
+            <a href="/">
+              GUSTAVO
+              <br />
+              SANTANA
+            </a>
+          </h1>
+
           <nav className="flex gap-4 items-end">
             <ul className="flex gap-4 text-lg">
               <li>
@@ -86,8 +175,8 @@ export default function Header() {
 
             {renderThemeChanger()}
           </nav>
-        )}
-      </header>
+        </header>
+      )}
     </>
   );
 }

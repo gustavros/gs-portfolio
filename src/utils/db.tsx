@@ -13,6 +13,7 @@ export interface ProjectProps {
 }
 
 export interface Project {
+  id: number;
   title: string;
   description: string;
   image: string;
@@ -22,12 +23,14 @@ export interface Project {
 export const projects: ProjectProps = {
   professional: [
     {
+      id: 1,
       title: "Hide Pagamentos",
       description: "Landing page para a Hide Pagamentos.",
       image: HidePagamentosImage.src,
       link: "google.com.br",
     },
     {
+      id: 2,
       title: "Galorys RP",
       description: "Landing page para a Galorys RP.",
       image: GalorysRpImage.src,
@@ -36,6 +39,7 @@ export const projects: ProjectProps = {
   ],
   personal: [
     {
+      id: 1,
       title: "Mo' Movies",
       description:
         "Sistema para visualização de filmes e séries, com base na API do The Movie Database.",
@@ -43,18 +47,21 @@ export const projects: ProjectProps = {
       link: "google.com.br",
     },
     {
+      id: 2,
       title: "Food Explorer",
       description: "Site para compras de pratos de restaurantes.",
       image: FoodExplorerImage.src,
       link: "google.com.br",
     },
     {
+      id: 3,
       title: "Doctor Care",
       description: "Landing page para a Doctor Care.",
       image: DoctorCareImage.src,
       link: "google.com.br",
     },
     {
+      id: 4,
       title: "Gustavo's Blog",
       description:
         "📃 Gustavo's Blog é um projeto de um diário online que permite administradores fazer postagens no mesmo.",
@@ -63,6 +70,7 @@ export const projects: ProjectProps = {
     },
 
     {
+      id: 5,
       title: "Maratona Slack",
       description: "Site para a Maratona Slack.",
       image: MaratonaSlack.src,
