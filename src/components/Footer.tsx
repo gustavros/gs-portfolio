@@ -18,7 +18,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <p>© 2022 Gustavo Santana. Todos os direitos reservados. </p>
+        <p className="text-center">© 2022 Gustavo Santana. Todos os direitos reservados. </p>
       </div>
     </footer>
   );
