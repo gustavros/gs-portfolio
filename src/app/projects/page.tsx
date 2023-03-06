@@ -66,7 +66,7 @@ export default function Projects() {
 
       <div>
         <h1 className="font-unbounded text-4xl p-6 mb-5 relative">
-          Projetos profissionais
+          Projetos pessoais
         </h1>
         <Swiper
           className="mySwiper"
