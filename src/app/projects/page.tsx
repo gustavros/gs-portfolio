@@ -20,7 +20,7 @@ export default function Projects() {
   return (
     <div className="animate-fade-in relative">
       <div>
-        <h1 className="font-unbounded text-4xl p-6 mb-5 relative ">
+        <h1 className="font-unbounded text-4xl p-6 mb-5 relative text-center">
           Projetos profissionais
         </h1>
         <Swiper
@@ -78,7 +78,7 @@ export default function Projects() {
       </div>
 
       <div>
-        <h1 className="font-unbounded text-4xl p-6 mb-5 relative">
+        <h1 className="font-unbounded text-4xl p-6 mb-5 relative text-center">
           Projetos pessoais
         </h1>
         <Swiper

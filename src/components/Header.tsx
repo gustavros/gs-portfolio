@@ -168,7 +168,7 @@ export default function Header() {
               <li>
                 <ActiveLinks href="/projects">Projetos</ActiveLinks>
               </li>
-              <li className="cursor-not-allowed text-zinc-700 pointer-events-none select-none dark:text-zinc-200">
+              <li>
                 <ActiveLinks href="/contact">Contato</ActiveLinks>
               </li>
             </ul>
