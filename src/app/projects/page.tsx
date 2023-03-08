@@ -18,9 +18,9 @@ export default function Projects() {
   const { professional, personal } = projects;
 
   return (
-    <>
+    <div className="animate-fade-in relative">
       <div>
-        <h1 className="font-unbounded text-4xl p-6 mb-5 relative">
+        <h1 className="font-unbounded text-4xl p-6 mb-5 relative ">
           Projetos profissionais
         </h1>
         <Swiper
@@ -134,6 +134,6 @@ export default function Projects() {
           ))}
         </Swiper>
       </div>
-    </>
+    </div>
   );
 }

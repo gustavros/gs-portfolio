@@ -105,7 +105,7 @@ export default function Header() {
                       Projetos
                     </ActiveLinks>
                   </li>
-                  <li className="cursor-not-allowed text-zinc-700 pointer-events-none select-none dark:text-zinc-200">
+                  <li>
                     <ActiveLinks
                       onClick={() => {
                         setIsMenuOpen(false);
