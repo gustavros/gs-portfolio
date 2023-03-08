@@ -12,6 +12,7 @@ import "./styles.css";
 import { Pagination } from "swiper";
 
 import { projects } from "@/utils/db";
+import { ArrowSquareOut } from "phosphor-react";
 
 export default function Projects() {
   const { professional, personal } = projects;
@@ -53,10 +54,22 @@ export default function Projects() {
                 <div>
                   <a
                     href={project.link}
-                    className="bg-cyan-400 p-2 my-4 text-zinc-900 rounded-lg"
+                    target="_blank"
+                    className="bg-cyan-400 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
                   >
                     Visualizar projeto
+                    <ArrowSquareOut size={18} />
                   </a>
+
+                  {project.repository && (
+                    <a
+                      target="_blank"
+                      href={project.repository}
+                      className="bg-cyan-500 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
+                    >
+                      Visualizar repositório
+                    </a>
+                  )}
                 </div>
               </div>
             </SwiperSlide>
@@ -99,10 +112,22 @@ export default function Projects() {
                 <div>
                   <a
                     href={project.link}
-                    className="bg-cyan-400 p-2 my-4 text-zinc-900 rounded-lg"
+                    target="_blank"
+                    className="bg-cyan-400 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
                   >
                     Visualizar projeto
+                    <ArrowSquareOut size={18} />
                   </a>
+
+                  {project.repository && (
+                    <a
+                      href={project.repository}
+                      target="_blank"
+                      className="bg-cyan-500 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
+                    >
+                      Visualizar repositório
+                    </a>
+                  )}
                 </div>
               </div>
             </SwiperSlide>

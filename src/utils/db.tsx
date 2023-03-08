@@ -5,7 +5,6 @@ import DoctorCareImage from "../assets/doctor-care.png";
 import GustavosBlogImage from "../assets/gustavos-blog.png";
 import MoMoviesImage from "../assets/mo-movies.png";
 import MaratonaSlack from "../assets/maratona-slack.png";
-import FoodExplorerImage from "../assets/food-explorer.png";
 
 export interface ProjectProps {
   professional: Project[];
@@ -18,6 +17,7 @@ export interface Project {
   description: string;
   image: string;
   link: string;
+  repository?: string;
 }
 
 export const projects: ProjectProps = {
@@ -27,14 +27,14 @@ export const projects: ProjectProps = {
       title: "Hide Pagamentos",
       description: "Landing page para a Hide Pagamentos.",
       image: HidePagamentosImage.src,
-      link: "google.com.br",
+      link: "http://sapagamentos.com/",
     },
     {
       id: 2,
       title: "Galorys RP",
       description: "Landing page para a Galorys RP.",
       image: GalorysRpImage.src,
-      link: "google.com.br",
+      link: "https://galorys.com/games/grandtheftauto",
     },
   ],
   personal: [
@@ -44,21 +44,17 @@ export const projects: ProjectProps = {
       description:
         "Sistema para visualização de filmes e séries, com base na API do The Movie Database.",
       image: MoMoviesImage.src,
-      link: "google.com.br",
+      link: "https://mo-movies.vercel.app/",
+      repository: "https://github.com/gustavros/mo-movies",
     },
-    {
-      id: 2,
-      title: "Food Explorer",
-      description: "Site para compras de pratos de restaurantes.",
-      image: FoodExplorerImage.src,
-      link: "google.com.br",
-    },
+
     {
       id: 3,
       title: "Doctor Care",
       description: "Landing page para a Doctor Care.",
       image: DoctorCareImage.src,
-      link: "google.com.br",
+      link: "https://gustavros.github.io/doctorcare/",
+      repository: "https://github.com/gustavros/doctorcare",
     },
     {
       id: 4,
@@ -66,15 +62,18 @@ export const projects: ProjectProps = {
       description:
         "📃 Gustavo's Blog é um projeto de um diário online que permite administradores fazer postagens no mesmo.",
       image: GustavosBlogImage.src,
-      link: "google.com.br",
+      link: "http://gustavros-blog-web.vercel.app/",
+      repository: "https://github.com/gustavros/gustavros-blog-web",
     },
 
     {
       id: 5,
       title: "Maratona Slack",
-      description: "Site para a Maratona Slack.",
+      description:
+        "Maratona Slack é um site para se inscrever na maratona Slack",
       image: MaratonaSlack.src,
-      link: "google.com.br",
+      link: "https://maratona-slack.vercel.app/",
+      repository: "https://github.com/gustavros/maratona-slack",
     },
   ],
 };

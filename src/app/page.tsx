@@ -9,7 +9,10 @@ export default function Home() {
         </p>
 
         <h1 className="font-unbounded text-4xl pb-4 md:text-5xl">
-          <span className="font-unbounded text-cyan-300 ">Olá— Eu sou o Gustavo.</span> Criando sonhos atráves da programação.
+          <span className="font-unbounded text-cyan-300 ">
+            Olá— Eu sou o Gustavo.
+          </span>{" "}
+          Criando sonhos atráves da programação.
         </h1>
 
         <div className="text-xl">
@@ -25,11 +28,10 @@ export default function Home() {
         </div>
 
         <p className="mt-8 ">
-          Você pode me encontrar em{" "}
-          <Link href="mailto:gustavossw@hotmail.com" className="text-cyan-400">
-            Contato
+          Gostaria de trabalharmos juntos?{" "}
+          <Link href="/contact">
+            <span className="text-cyan-400">Entre em contato</span>
           </Link>
-          .
         </p>
       </main>
     </>

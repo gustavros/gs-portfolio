@@ -72,7 +72,7 @@ export default function Header() {
           </h1>
 
           {isMenuOpen ? (
-            <div className="absolute top-0 right-0 w-1/2 h-screen bg-zinc-900 bg-opacity-90 z-10 animate-slide-in-right overflow-auto dark:bg-zinc-50 dark:bg-opacity-90">
+            <div className="absolute top-0 right-0 w-full h-screen bg-zinc-900 bg-opacity-95 z-10 animate-slide-in-right overflow-auto dark:bg-zinc-50 dark:bg-opacity-90">
               <nav className="flex flex-col gap-6 items-center justify-center h-full ">
                 <ul className="flex flex-col gap-8 items-center text-lg">
                   <li>
