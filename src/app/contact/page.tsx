@@ -30,7 +30,7 @@ export default function Contact() {
           Entre em contato comigo
         </h1>
 
-        <form className="bg-transparent rounded-lg p-6 w-96">
+        <form className="bg-transparent rounded-lg p-6 w-72 sm:w-96">
           <div className="mb-4">
             <label
               className="text-cyan-400 font-bold block mb-2"
