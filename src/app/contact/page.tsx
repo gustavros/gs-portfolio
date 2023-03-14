@@ -10,10 +10,12 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const messageToWhatsapp = `Olá, meu nome é ${name} e meu e-mail é ${email}. ${message}`;
+    if (!name || !email || !message) {
+      return alert("Preencha todos os campos");
+    }
 
     window.open(
-      `https://api.whatsapp.com/send?phone=5581983704666&text=${messageToWhatsapp}`
+      `mailto:gustavossw@hotmail.com?subject=Contato do portfólio&body=${message}`
     );
 
     setName("");
