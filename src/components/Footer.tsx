@@ -1,4 +1,6 @@
 export default function Footer() {
+  const actualYear = new Date().getFullYear();
+
   return (
     <footer className="px-4 py-8 gap-2 flex flex-col justify-between items-center">
       <div className="flex gap-4 items-center">
@@ -18,7 +20,9 @@ export default function Footer() {
       </div>
 
       <div>
-        <p className="text-center">© 2022 Gustavo Santana. Todos os direitos reservados. </p>
+        <p className="text-center">
+          © {actualYear} Gustavo Santana. Todos os direitos reservados.{" "}
+        </p>
       </div>
     </footer>
   );

@@ -34,6 +34,7 @@ export default function Header() {
           role={"button"}
           onClick={() => {
             setTheme("light");
+            setIsMenuOpen(false);
           }}
         />
       );
@@ -45,6 +46,7 @@ export default function Header() {
           role={"button"}
           onClick={() => {
             setTheme("dark");
+            setIsMenuOpen(false);
           }}
         />
       );
