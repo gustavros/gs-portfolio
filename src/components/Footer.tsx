@@ -19,9 +19,19 @@ export default function Footer() {
         </a>
       </div>
 
-      <div>
+      <div className="text-center">
         <p className="text-center">
           © {actualYear} Gustavo Santana. Todos os direitos reservados.{" "}
+        </p>
+        <p className="text-center">
+          Feito com{" "}
+          <span role="img" aria-label="coração">
+            ❤️
+          </span>{" "}
+          e{" "}
+          <span role="img" aria-label="café">
+            ☕.
+          </span>
         </p>
       </div>
     </footer>

@@ -28,18 +28,6 @@ export default function Contact() {
           Entre em contato comigo
         </h1>
 
-        <p>
-          Você pode entrar em contato comigo através do meu e-mail ou do meu
-          número de telefone. Também posso ser encontrado no{" "}
-          <a
-            href="https://www.linkedin.com/in/gustavo-santana-7b5b3b1b3/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </p>
-
         <form className="bg-transparent rounded-lg p-6 w-96">
           <div className="mb-4">
             <label
