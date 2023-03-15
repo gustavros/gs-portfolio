@@ -1,3 +1,5 @@
+"use client";
+
 import CardTechs from "@/components/CardTechs";
 
 import NextLogo from "../../assets/nextjs.svg";
@@ -6,8 +8,11 @@ import TypeScriptLogo from "../../assets/typescript.svg";
 import TailwindLogo from "../../assets/tailwindcss.svg";
 import StyledComponentsLogo from "../../assets/styled-components.svg";
 import SassLogo from "../../assets/sass.svg";
+import usePageTitle from "@/hooks/usePageTitle";
 
 export default function Skills() {
+  usePageTitle({ pageTitle: "Habilidades - Gustavo Santana" });
+
   return (
     <main className="flex flex-col gap-10 py-10">
       <div>

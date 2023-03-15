@@ -1,5 +1,6 @@
 "use client";
 
+import usePageTitle from "@/hooks/usePageTitle";
 import React, { useState } from "react";
 
 export default function Contact() {
@@ -7,6 +8,8 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  usePageTitle({ pageTitle: "Contato - Gustavo Santana" });
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 

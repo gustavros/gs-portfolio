@@ -13,9 +13,12 @@ import { Pagination } from "swiper";
 
 import { projects } from "@/utils/db";
 import { ArrowSquareOut } from "phosphor-react";
+import usePageTitle from "@/hooks/usePageTitle";
 
 export default function Projects() {
   const { professional, personal } = projects;
+
+  usePageTitle({ pageTitle: "Projetos - Gustavo Santana" });
 
   return (
     <div className="animate-fade-in relative">

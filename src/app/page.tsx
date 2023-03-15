@@ -1,6 +1,11 @@
+'use client'
+
+import usePageTitle from "@/hooks/usePageTitle";
 import Link from "next/link";
 
 export default function Home() {
+  usePageTitle({ pageTitle: "Portfólio - Gustavo Santana" });
+
   return (
     <>
       <main>
