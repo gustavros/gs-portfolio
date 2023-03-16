@@ -16,6 +16,15 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XG85R89YFW"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-XG85R89YFW');
+        </script>
         <title>Portfólio - Gustavo Santana</title>
         <meta
           name="description"
@@ -26,6 +35,7 @@ export default function RootLayout({
 
         <link rel="icon" href="/favicon.ico" />
       </head>
+
       <body>
         <ThemeProvider attribute="class" enableSystem={true}>
           <Header />
