@@ -14,7 +14,7 @@ export default function Home() {
         </p>
 
         <h1 className="font-unbounded text-4xl pb-4 md:text-5xl">
-          <span className="font-unbounded text-cyan-300 ">
+          <span className="font-unbounded text-amber-300 ">
             Olá— Eu sou o Gustavo.
           </span>{" "}
           Criando sonhos atráves da programação.
@@ -35,7 +35,7 @@ export default function Home() {
         <p className="mt-8 ">
           Gostaria de trabalharmos juntos?{" "}
           <Link href="/contact">
-            <span className="text-cyan-400">Entre em contato</span>
+            <span className="text-amber-400">Entre em contato</span>
           </Link>
         </p>
       </main>

@@ -36,7 +36,7 @@ export default function Contact() {
         <form className="bg-transparent rounded-lg p-6 w-72 sm:w-96">
           <div className="mb-4">
             <label
-              className="text-cyan-400 font-bold block mb-2"
+              className="text-amber-400 font-bold block mb-2"
               htmlFor="name"
             >
               Nome
@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
           <div className="mb-4">
             <label
-              className="text-cyan-400 font-bold block mb-2 bg-transparent"
+              className="text-amber-400 font-bold block mb-2 bg-transparent"
               htmlFor="email"
             >
               Seu e-mail
@@ -69,7 +69,7 @@ export default function Contact() {
           </div>
           <div className="mb-6">
             <label
-              className="text-cyan-400 font-bold block mb-2"
+              className="text-amber-400 font-bold block mb-2"
               htmlFor="message"
             >
               Sua mensagem
@@ -84,7 +84,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center justify-center">
             <button
-              className="bg-cyan-400  text-zinc-900 hover:bg-cyan-700 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-amber-400  text-zinc-900 hover:bg-amber-700 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
               onClick={handleSubmit}
             >

@@ -13,7 +13,7 @@ export default function Footer() {
         <a
           target={"_blank"}
           href="https://github.com/gustavros/gs-portfolio"
-          className="text-zinc-900 bg-cyan-400 p-1 rounded-lg"
+          className="text-zinc-900 bg-amber-400 p-1 rounded-lg"
         >
           Repositório do projeto
         </a>

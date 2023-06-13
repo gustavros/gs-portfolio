@@ -58,7 +58,7 @@ export default function Projects() {
                   <a
                     href={project.link}
                     target="_blank"
-                    className="bg-cyan-400 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
+                    className="bg-amber-400 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
                   >
                     Visualizar projeto
                     <ArrowSquareOut size={18} />
@@ -68,7 +68,7 @@ export default function Projects() {
                     <a
                       target="_blank"
                       href={project.repository}
-                      className="bg-cyan-500 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
+                      className="bg-amber-500 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
                     >
                       Visualizar repositório
                     </a>
@@ -116,7 +116,7 @@ export default function Projects() {
                   <a
                     href={project.link}
                     target="_blank"
-                    className="bg-cyan-400 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
+                    className="bg-amber-400 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
                   >
                     Visualizar projeto
                     <ArrowSquareOut size={18} />
@@ -126,7 +126,7 @@ export default function Projects() {
                     <a
                       href={project.repository}
                       target="_blank"
-                      className="bg-cyan-500 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
+                      className="bg-amber-500 p-2 my-4 text-zinc-900 rounded-lg flex items-center gap-2 text-sm"
                     >
                       Visualizar repositório
                     </a>

@@ -30,7 +30,7 @@ export default function Header() {
       return (
         <Sun
           size={32}
-          className="text-zinc-900 bg-cyan-400 p-1 rounded-lg"
+          className="text-zinc-900 bg-amber-400 p-1 rounded-lg"
           role={"button"}
           onClick={() => {
             setTheme("light");
@@ -42,7 +42,7 @@ export default function Header() {
       return (
         <Moon
           size={32}
-          className="text-zinc-900 bg-cyan-400 p-1 rounded-lg"
+          className="text-zinc-900 bg-amber-400 p-1 rounded-lg"
           role={"button"}
           onClick={() => {
             setTheme("dark");
@@ -65,7 +65,7 @@ export default function Header() {
     <>
       {isMobile ? (
         <header className="flex items-center justify-between py-10 px-4">
-          <h1 className="font-bold text-3xl uppercase text-cyan-400">
+          <h1 className="font-bold text-3xl uppercase text-amber-400">
             <a href="/">
               GUSTAVO
               <br />
@@ -129,7 +129,7 @@ export default function Header() {
                 >
                   <X
                     size={32}
-                    className="text-cyan-400"
+                    className="text-amber-400"
                     role={"button"}
                     onClick={() => {
                       setIsMenuOpen(false);
@@ -141,7 +141,7 @@ export default function Header() {
           ) : (
             <List
               size={32}
-              className="text-zinc-900 bg-cyan-400 p-1 rounded-lg"
+              className="text-zinc-900 bg-amber-400 p-1 rounded-lg"
               role={"button"}
               onClick={() => {
                 setIsMenuOpen(true);
@@ -151,7 +151,7 @@ export default function Header() {
         </header>
       ) : (
         <header className="flex items-center justify-between py-10 px-4 ">
-          <h1 className="font-bold text-3xl uppercase text-cyan-400">
+          <h1 className="font-bold text-3xl uppercase text-amber-400">
             <a href="/">
               GUSTAVO
               <br />
