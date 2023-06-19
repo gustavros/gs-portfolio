@@ -41,7 +41,7 @@ export default function Projects() {
         >
           {professional.map((project) => (
             <SwiperSlide key={project.id}>
-              <div className="flex flex-col items-center border rounded-lg border-zinc-800 p-4 w-80 mb-8 dark:border-zinc-200">
+              <div className="flex flex-col items-center border rounded-lg border-zinc-800 p-4 w-80 mb-8 dark:border-zinc-50 dark:bg-zinc-900">
                 <h1 className="font-poppins text-2xl pb-6">{project.title}</h1>
 
                 <p className="text-center text-zinc-500">

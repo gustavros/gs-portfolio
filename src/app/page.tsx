@@ -1,7 +1,9 @@
-'use client'
+"use client";
 
 import usePageTitle from "@/hooks/usePageTitle";
 import Link from "next/link";
+import { File, GithubLogo, LinkedinLogo } from "phosphor-react";
+import { Tooltip } from "react-tooltip";
 
 export default function Home() {
   usePageTitle({ pageTitle: "Portfólio - Gustavo Santana" });
@@ -13,17 +15,17 @@ export default function Home() {
           Gustavo Santana. Desenvolvedor Front-end. Gamer.
         </p>
 
-        <h1 className="font-unbounded text-4xl pb-4 md:text-5xl">
+        <h1 className="font-unbounded text-3xl pb-4 md:text-4xl">
           <span className="font-unbounded text-amber-300 ">
             Olá— Eu sou o Gustavo.
           </span>{" "}
-          Criando sonhos atráves da programação.
+          Desenvolvedor Front-end, apaixonado por tecnologia.
         </h1>
 
         <div className="text-xl">
           <p>
-            Brasileiro, desenvolvedor front-end. Atualmente trabalho com React e
-            Next.js.
+            Brasileiro, atualmente trabalho com React e
+            Next.js no desenvolvimento de aplicações web.
           </p>
 
           <p>
@@ -32,12 +34,41 @@ export default function Home() {
           </p>
         </div>
 
-        <p className="mt-8 ">
-          Gostaria de trabalharmos juntos?{" "}
-          <Link href="/contact">
-            <span className="text-amber-400">Entre em contato</span>
-          </Link>
-        </p>
+        <div className="flex gap-4 pt-4 mt-8">
+          <a
+            data-tooltip-id="tooltip"
+            data-tooltip-content="Baixar CV"
+            data-tooltip-place="bottom"
+            className="cursor-pointer"
+            href="CV - Gustavo Santana.pdf"
+            download
+          >
+            <File size={32} />
+          </a>
+          <a
+            data-tooltip-id="tooltip"
+            data-tooltip-content="Github"
+            data-tooltip-place="bottom"
+            className="cursor-pointer"
+            href="
+            https://github.com/gustavros"
+            target={"_blank"}
+          >
+            <GithubLogo size={32} weight="light" />
+          </a>
+          <a
+            data-tooltip-id="tooltip"
+            data-tooltip-content="Linkedin"
+            data-tooltip-place="bottom"
+            className="cursor-pointer"
+            href="https://www.linkedin.com/in/gustavo-santana-9b1b3a1b0/"
+            target={"_blank"}
+          >
+            <LinkedinLogo size={32} weight="light" />
+          </a>
+
+          <Tooltip id="tooltip" />
+        </div>
       </main>
     </>
   );

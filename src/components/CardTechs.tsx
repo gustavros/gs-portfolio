@@ -16,7 +16,7 @@ export default function CardTechs({ techonology, image }: CardTechsProps) {
         height={image.height || 100}
         alt={techonology}
 
-        className="dark:filter dark:invert hover:scale-110 transition-all duration-200"
+        className="filter invert dark:invert-0  hover:scale-110 transition-all duration-200"
       />
       <p className="text-center">{techonology}</p>
     </div>

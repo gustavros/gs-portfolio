@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
 
-  @apply bg-zinc-900 dark:bg-zinc-50;
+  @apply bg-zinc-50 dark:bg-zinc-900;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
