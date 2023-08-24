@@ -1,10 +1,12 @@
 import HidePagamentosImage from "../assets/hide-pagamentos.png";
 import GalorysRpImage from "../assets/galorys-rp.png";
+import EncapseImage from "../assets/encapse.png";
 
 import DoctorCareImage from "../assets/doctor-care.png";
 import GustavosBlogImage from "../assets/gustavos-blog.png";
 import MoMoviesImage from "../assets/mo-movies.png";
 import MaratonaSlack from "../assets/maratona-slack.png";
+import DeusGamerImage from "../assets/deus-gamer.png";
 
 export interface ProjectProps {
   professional: Project[];
@@ -35,6 +37,13 @@ export const projects: ProjectProps = {
       description: "Landing page para a Galorys RP.",
       image: GalorysRpImage.src,
       link: "https://galorys.com/games/grandtheftauto",
+    },
+    {
+      id: 3,
+      title: "Encapse Arquitetura",
+      description: "Landing page para a Encapse Arquitetura.",
+      image: EncapseImage.src,
+      link: "https://www.encapse.arq.br/",
     },
   ],
   personal: [
@@ -68,6 +77,16 @@ export const projects: ProjectProps = {
 
     {
       id: 5,
+      title: "Deus Gamer",
+      description:
+        "🎮 Deus Gamer é uma plataforma de jogos que fornece acesso aos melhores jogos gratuitos!",
+      image: DeusGamerImage.src,
+      link: "https://deus-gamer.vercel.app/",
+      repository: "https://github.com/gustavros/deus-gamer",
+    },
+
+    {
+      id: 6,
       title: "Maratona Slack",
       description:
         "Maratona Slack é um site para se inscrever na maratona Slack",
